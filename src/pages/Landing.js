@@ -2,16 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { Logo } from '../components';
-import mainLogo from '../assets/images/main.svg';
 
 
 const Landing = () => {
   return (
     <Wrapper>
-        <nav>
-            <Logo />
-        </nav>
+
         <div className="container page">
             {/* Info */}
             <div className="info">
@@ -19,14 +15,10 @@ const Landing = () => {
                     Job <span>tracking</span> app
                 </h1>
                 <p>
-                    a erat nam at lectus urna duis convallis convallis tellus id interdum velit
-                     laoreet id donec ultrices tincidunt arcu non
-                    a erat nam at lectus urna duis convallis convallis tellus id interdum velit
-                     laoreet id donec ultrices tincidunt arcu non
+                    A dashboard app that tracks searching jobs and displays information and the current status 
                 </p>
                 <Link to='/register' className='btn btn-hero'>Login/Register</Link>
             </div>
-            <img src={mainLogo} alt="job hunt" className='img main-img' />
         </div>
     </Wrapper>
   )

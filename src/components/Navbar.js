@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaAlignLeft, FaUserCircle, FaCaretDown } from 'react-icons/fa';
-import Logo from './Logo';
 
 import Wrapper from '../assets/wrappers/Navbar';
 import { toggleSidebar, clearStore } from '../features/user/userSlice';
@@ -26,7 +25,6 @@ const Navbar = () => {
             <FaAlignLeft />
           </button>
           <div>
-            <Logo />
             <h3 className="logo-text">Dashboard</h3>
           </div>
           <div className="btn-container">

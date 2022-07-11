@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { FormRow, Logo } from '../components';
+import { FormRow } from '../components';
 import Wrapper from '../assets/wrappers/RegisterPage';
 import { loginUser } from '../features/user/userSlice';
 import { registerUser } from '../features/user/userSlice';
@@ -62,7 +62,6 @@ const Register = () => {
   return (
     <Wrapper className='full-page'>
       <form className='form' onSubmit={onSubmit}>
-        <Logo />
         <h3>{ values.isMember ? 'Login' : 'Register'}</h3>
 
         { !values.isMember && <FormRow 
@@ -97,9 +96,9 @@ const Register = () => {
         <button 
           type='button' 
           disabled={isLoading}
-          onClick={() => dispatch(loginUser({ email: 'testUser@test.com', password: 'secret'}))}
+          onClick={() => dispatch(loginUser({ email: 'ben@gmail.com', password: '123456'}))}
           className='btn btn-block'>
-            { isLoading ? 'Loading...' : 'Demo app'}
+            { isLoading ? 'Loading...' : 'Join as Me'}
           </button>
         <p>
           { values.isMember ? 'Not a member yet?' : 'Already a member?' }
