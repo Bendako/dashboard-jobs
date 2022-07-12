@@ -32,7 +32,6 @@ const Job = ({
       </header>
       <div className="content">
         <div className="content-center">
-          {/* <h4>More content</h4> */}
           <JobInfo icon={<FaLocationArrow />} text={jobLocation} />
           <JobInfo icon={<FaCalendarAlt />} text={date} />
           <JobInfo icon={<FaBriefcase />} text={jobType} />

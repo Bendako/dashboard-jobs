@@ -3,11 +3,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 
-
 const Landing = () => {
   return (
     <Wrapper>
-
         <div className="container page">
             {/* Info */}
             <div className="info">
@@ -39,7 +37,6 @@ const Wrapper = styled.main`
         min-height: calc(100vh - var(--nav-height));
         display: grid;
         align-items: center;
-        /* margin-top: -3rem; */
     }
     h1 {
         font-weight: 700;
